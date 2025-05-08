@@ -1,3 +1,3 @@
 # NESTQUANT
 
-Code will be released as soon.
+The code will be released soon.
