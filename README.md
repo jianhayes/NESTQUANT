@@ -25,7 +25,7 @@ ViT-based quantization with part-bit model inference evaluation.
 python main_nestquant_vit.py --model swin_large_patch4_window7_224 --dataset_path /Datasets/ILSVRC2012/ --mode squant_ -wb 8 -ab 8 -nb 4 -s 25 --batch_size 16 --nest --adaround --packbits --nestquant --eval_nestquant --savepath ./nestquant/qmodel/
 ```
 
-You can recursively set all `nest` hyperparameters to `False` by `.set_nest` in the `NestConv2dQuantizer` and `NestConv2dQuantizer` of `quantized_DNN_model_nestquant` for upgrading to full-bit model for simulation.
+You can recursively set all `nest` hyperparameters to `False` by `.set_nest` in the `NestLinearQuantizer` and `NestConv2dQuantizer` of `quantized_DNN_model_nestquant` for upgrading to full-bit model for simulation.
 
 ## Publication
 
